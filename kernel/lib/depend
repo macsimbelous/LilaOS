@@ -1,0 +1,10 @@
+printf.o: printf.c d:/maxim/lila/kernel/include/video.h \
+  d:/maxim/lila/kernel/include/stdlib.h
+stack.o: stack.c d:/maxim/lila/kernel/include/stdlib.h \
+  d:/maxim/lila/kernel/include/stack.h \
+  d:/maxim/lila/kernel/include/heap.h \
+  d:/maxim/lila/kernel/include/types.h
+string.o: string.c d:/maxim/lila/kernel/include/string.h \
+  d:/maxim/lila/kernel/include/ctype.h \
+  d:/maxim/lila/kernel/include/types.h
+xtox.o: xtox.c d:/maxim/lila/kernel/include/types.h

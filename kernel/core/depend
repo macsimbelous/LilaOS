@@ -1,0 +1,39 @@
+entry.o: entry.S d:/maxim/lila/kernel/include/config.h \
+  d:/maxim/lila/kernel/include/segments.h
+start.o: start.S d:/maxim/lila/kernel/include/config.h \
+  d:/maxim/lila/kernel/include/multiboot.h
+cmd.o: cmd.c d:/maxim/lila/kernel/include/string.h \
+  d:/maxim/lila/kernel/include/stdlib.h
+dm.o: dm.c d:/maxim/lila/kernel/include/dm.h \
+  d:/maxim/lila/kernel/include/stdlib.h \
+  d:/maxim/lila/kernel/include/ints.h \
+  d:/maxim/lila/kernel/include/types.h
+exceptions.o: exceptions.c d:/maxim/lila/kernel/include/stdlib.h
+fsm.o: fsm.c d:/maxim/lila/kernel/include/fsm.h \
+  d:/maxim/lila/kernel/include/stdlib.h
+ints.o: ints.c d:/maxim/lila/kernel/include/config.h \
+  d:/maxim/lila/kernel/include/descriptor.h \
+  d:/maxim/lila/kernel/include/string.h \
+  d:/maxim/lila/kernel/include/segments.h \
+  d:/maxim/lila/kernel/include/stdlib.h
+irq.o: irq.c d:/maxim/lila/kernel/include/config.h \
+  d:/maxim/lila/kernel/include/descriptor.h \
+  d:/maxim/lila/kernel/include/segments.h \
+  d:/maxim/lila/kernel/include/io.h d:/maxim/lila/kernel/include/stdlib.h \
+  d:/maxim/lila/kernel/include/ints.h
+main.o: main.c d:/maxim/lila/kernel/include/multiboot.h \
+  d:/maxim/lila/kernel/include/version.h \
+  d:/maxim/lila/kernel/include/pmm.h \
+  d:/maxim/lila/kernel/include/stdlib.h \
+  d:/maxim/lila/kernel/include/ints.h d:/maxim/lila/kernel/include/cmd.h \
+  d:/maxim/lila/kernel/include/heap.h \
+  d:/maxim/lila/kernel/include/types.h
+rd.o: rd.c d:/maxim/lila/kernel/include/stdlib.h
+rtc.o: rtc.c d:/maxim/lila/kernel/include/types.h \
+  d:/maxim/lila/kernel/include/io.h d:/maxim/lila/kernel/include/rtc.h
+syscall.o: syscall.c d:/maxim/lila/kernel/include/stdlib.h
+timer.o: timer.c d:/maxim/lila/kernel/include/timer.h \
+  d:/maxim/lila/kernel/include/types.h d:/maxim/lila/kernel/include/io.h \
+  d:/maxim/lila/kernel/include/ints.h
+video.o: video.c d:/maxim/lila/kernel/include/video.h \
+  d:/maxim/lila/kernel/include/string.h d:/maxim/lila/kernel/include/io.h

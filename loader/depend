@@ -1,0 +1,3 @@
+asm.o: asm.S shared.h
+disk_io.o: disk_io.c shared.h
+main.o: main.c shared.h

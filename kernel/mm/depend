@@ -1,0 +1,8 @@
+heap.o: heap.c d:/maxim/lila/kernel/include/types.h \
+  d:/maxim/lila/kernel/include/heap.h \
+  d:/maxim/lila/kernel/include/stdlib.h \
+  d:/maxim/lila/kernel/include/pmm.h d:/maxim/lila/kernel/include/ints.h
+pmm.o: pmm.c d:/maxim/lila/kernel/include/pmm.h \
+  d:/maxim/lila/kernel/include/stdlib.h \
+  d:/maxim/lila/kernel/include/ints.h \
+  d:/maxim/lila/kernel/include/string.h
